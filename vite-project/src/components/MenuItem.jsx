@@ -2,11 +2,8 @@ import { StyledLink } from '../styles/Navbar.styles';
 import Dropdown from './Dropdown';
 
 export const MenuItem = ({ item }) => {
-	console.log('item', item);
-	// {
-	// <p>menuitem</p>;
-	// item.map((item) => {
-	// return (
+	// console.log('item', item);
+
 	return (
 		<div key={item.label}>
 			{item.subMenu ? (
@@ -16,7 +13,5 @@ export const MenuItem = ({ item }) => {
 			)}
 		</div>
 	);
-	// 	);
-	// });
-	// }
+
 };
