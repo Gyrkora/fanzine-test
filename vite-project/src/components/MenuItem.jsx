@@ -7,7 +7,7 @@ export const MenuItem = ({ item }) => {
 	return (
 		<div key={item.label}>
 			{item.subMenu ? (
-				<Dropdown subMenu={item.subMenu} />
+				<Dropdown item={item} />
 			) : (
 				<StyledLink to={item.url}>{item.label}</StyledLink>
 			)}

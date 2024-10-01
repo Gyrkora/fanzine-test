@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
-export const NavbarContainer = styled.div`
+export const NavbarContainer = styled.nav`
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -18,10 +18,12 @@ export const NavbarLinks = styled.ul`
 	flex-direction: row;
 	list-style: none;
 	position: relative;
+	padding: 0;
 `;
 
 export const NavbarLinksSubMenu = styled(NavbarLinks)`
 	flex-direction: column;
+	padding: 0;
 `;
 
 export const StyledLink = styled(Link)`
